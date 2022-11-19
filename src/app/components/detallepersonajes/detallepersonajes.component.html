@@ -1,1 +1,7 @@
-<p>detallepersonajes works!</p>
+<div class="card" style="width: 18rem;" *ngIf="personaje">
+  <img src="{{personaje.imagen}}" class="card-img-top"/>
+  <div class="card-body">
+    <h5 class="card-title">{{personaje.nombre}}</h5>
+  </div>
+</div>
+

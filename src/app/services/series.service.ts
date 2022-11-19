@@ -1,5 +1,5 @@
 import { Injectable } from "@angular/core";
-import { Observable } from "rxjs";
+import { Observable, raceWith } from "rxjs";
 import { HttpClient, HttpHeaders } from "@angular/common/http";
 import { environment } from "src/environments/environment";
 import { Serie } from "../models/Serie";
@@ -19,4 +19,6 @@ export class SeriesService {
     var url = environment.urlSeries + request;
     return this._http.get(url);
   }
+
+
 }

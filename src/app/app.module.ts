@@ -10,6 +10,9 @@ import {HttpClientModule} from '@angular/common/http';
 import { SeriesService } from './services/series.service';
 import { DetalleserieComponent } from './components/detalleserie/detalleserie.component';
 import { DetallepersonajesComponent } from './components/detallepersonajes/detallepersonajes.component';
+import { PersonajesService } from './services/personajes.service';
+import { InsertarpersonajeComponent } from './components/insertarpersonaje/insertarpersonaje.component';
+import { ModificarpersonajeComponent } from './components/modificarpersonaje/modificarpersonaje.component';
 
 @NgModule({
   declarations: [
@@ -17,12 +20,14 @@ import { DetallepersonajesComponent } from './components/detallepersonajes/detal
     HomeComponent,
     MenurutasComponent,
     DetalleserieComponent,
-    DetallepersonajesComponent
+    DetallepersonajesComponent,
+    InsertarpersonajeComponent,
+    ModificarpersonajeComponent
   ],
   imports: [
     BrowserModule, FormsModule, HttpClientModule,routing
   ],
-  providers: [appRoutingProviders,SeriesService],
+  providers: [appRoutingProviders,SeriesService,PersonajesService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

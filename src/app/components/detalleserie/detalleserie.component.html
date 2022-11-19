@@ -2,7 +2,8 @@
   <img src="{{serie.imagen}}" class="card-img-top"/>
   <div class="card-body">
     <h5 class="card-title">{{serie.nombre}}</h5>
-    <a [routerLink]="['personajes/' + serie.idSerie]" class="btn btn-info">PERSONAJES</a>
-
   </div>
+
+  <a [routerLink]="['/personajes/' + serie.idSerie]" class="btn btn-info">PERSONAJES</a>
+
 </div>
